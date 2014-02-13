@@ -8,6 +8,4 @@ set ts=4
 syntax on
 set number
 set expandtab
-set backupdir=C:\Users\Seth\vimTemp
-set directory=C:\Users\Seth\vimTemp
 
