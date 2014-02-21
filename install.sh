@@ -23,13 +23,13 @@ function getCwd(){
     fi
 }
 
-makeDir ~/.cache
-makeDir ~/.cache/vim
-makeDir ~/.cache/vim/backups
+makeDir $HOME/.cache
+makeDir $HOME/.cache/vim
+makeDir $HOME/.cache/vim/backups
 
 getCwd
 
-makeSymLink $cwd/.bashrc ~/.bashrc
-makeSymLink $cwd/.vimrc ~/.vimrc
-makeSymLink $cwd/.vim ~/.vim
+makeSymLink $cwd/.bashrc $HOME/.bashrc
+makeSymLink $cwd/.vimrc $HOME/.vimrc
+makeSymLink $cwd/.vim $HOME/.vim
 
