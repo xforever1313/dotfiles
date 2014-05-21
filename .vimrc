@@ -13,3 +13,6 @@ set mouse=a
 set backupdir=~/.cache/vim/backups
 
 set shellslash "For Windows
+
+"Make SConstruct's syntax be python
+autocmd BufNewFile,BufRead SConstruct set syntax=python  
