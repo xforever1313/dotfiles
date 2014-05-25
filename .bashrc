@@ -3,6 +3,6 @@
 alias cls=clear
 alias ls="ls --color=auto"
 
-PATH=$PATH:/home/seth/gcc-pi/bin
+PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin
 export EDITOR=vim
 
