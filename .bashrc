@@ -7,3 +7,8 @@ PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin
 export EDITOR=vim
 
 TZ='America/New_York'; export TZ
+
+#Disable CTRL + S from doing stuff in a terminal
+bind -r '\C-s'
+stty -ixon
+
