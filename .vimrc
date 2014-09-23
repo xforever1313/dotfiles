@@ -11,6 +11,10 @@ set ts=4
 "Turn on mouse support
 set mouse=a
 
+"Set the number of spaces to move when > or < is pressed
+set shiftwidth=4
+
+"Set backup dir
 set backupdir=~/.cache/vim/backups
 
 set shellslash "For Windows
@@ -48,5 +52,5 @@ imap <c-v> <esc>p<cr><insert>
 
 "Set undo to CTRL + Z
 nmap <c-z> u<cr>
-imap <c-z> <esc><c-z>
+imap <c-z> <c-u>
 
