@@ -1,12 +1,28 @@
+"Turn on syntax highlighting
 syntax on
+
+"Turn on line numbers
 set number
+
+"Set tabs
 set expandtab
 set ts=4
+
+"Turn on mouse support
 set mouse=a
 
 set backupdir=~/.cache/vim/backups
 
 set shellslash "For Windows
+
+"Highlisgh search results
+set hlsearch
+
+"Show a line across the row the curser is on
+set cursorline
+
+"Use system clipboard
+set clipboard=unnamedplus
 
 "Make SConstruct's syntax be python
 autocmd BufNewFile,BufRead SConstruct set syntax=python  
