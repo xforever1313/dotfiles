@@ -52,5 +52,5 @@ imap <c-v> <esc>p<cr><insert>
 
 "Set undo to CTRL + Z
 nmap <c-z> u<cr>
-imap <c-z> <c-u>
+imap <c-z> <esc><c-z><insert>
 
