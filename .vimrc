@@ -8,6 +8,10 @@ set number
 set expandtab
 set ts=4
 
+"Auto indent
+set autoindent
+set smartindent
+
 "Turn on mouse support
 set mouse=a
 
@@ -29,7 +33,11 @@ set cursorline
 set clipboard=unnamedplus
 
 "Make SConstruct's syntax be python
-autocmd BufNewFile,BufRead SConstruct set syntax=python  
+autocmd BufNewFile,BufRead SConstruct set syntax=python
+
+"" Highlight extra whitespace
+highlight ExtraWhitespace ctermbg=green guibg=green
+match ExtraWhitespace /\s\+$/
 
 """"Key bindings""""
 
