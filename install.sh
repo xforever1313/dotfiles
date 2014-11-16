@@ -18,7 +18,7 @@ function makeSymLink(){
 function getCwd(){
     if [ `uname` = "Linux" ]; then
         cwd=`pwd`
-    else 
+    else
         cwd=`cd`
     fi
 }
@@ -29,6 +29,8 @@ makeDir $HOME/.cache/vim/backups
 
 getCwd
 
+makeSymLink $cwd/.shellrc $HOME/.shellrc
+makeSymLink $cwd/.zshrc $HOME/.zshrc
 makeSymLink $cwd/.bashrc $HOME/.bashrc
 makeSymLink $cwd/.vimrc $HOME/.vimrc
 makeSymLink $cwd/.vim $HOME/.vim
