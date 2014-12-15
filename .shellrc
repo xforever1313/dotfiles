@@ -33,7 +33,7 @@ TZ='America/New_York'; export TZ
 isSSH=false
 if [[ "$SSH_CLIENT" != "" ]] && [[ "$SSH_CONNECTION" != "" ]]
 then
-    $isSSH=true
+    isSSH=true
 fi
 
 #####
