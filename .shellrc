@@ -1,10 +1,59 @@
 [[ $- != *i* ]] && return
 
+#####
+### Sets the bash color codes to english variables
+### (Thanks Nate)
+#####
+
+#####
+### Aliases
+#####
 alias cls=clear
 alias ls="ls --color=auto"
 
-PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin
+#####
+### Environmental Vars
+#####
+PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin:/usr/lib/emscripten
 export EDITOR=vim
 
+#####
+### Other vars
+####
+ROOT_UID=0
+
+#####
+### Set timezone.
+#####
 TZ='America/New_York'; export TZ
+
+###
+# Check to see if we are in an sshed shell or not.
+###
+isSSH=false
+if [[ "$SSH_CLIENT" != "" ]] && [[ "$SSH_CONNECTION" != "" ]]
+then
+    $isSSH=true
+fi
+
+#####
+# \brief Sets the shell prompt based on a variety of
+#        factors
+# \param $1 Root shell prompt
+# \param $2 User shell prompt
+# \param $3 SSH shell prompt
+#####
+function setPrompt {
+    if [[ "$UID" == "$ROOT_UID" ]]
+    then
+        PS1=$1
+    else
+        if [[ $isSSH == true ]]
+        then
+            PS1=$3
+        else
+            PS1=$2
+        fi
+    fi
+}
 
