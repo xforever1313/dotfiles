@@ -1,9 +1,12 @@
+execute pathogen#infect()
+
 "Turn on syntax highlighting
 syntax on
 
-"For vimwiki.
+"For Plugins
 set nocompatible
 filetype plugin on
+filetype plugin indent on
 
 "Turn on line numbers
 set number
