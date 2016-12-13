@@ -1,6 +1,10 @@
 "Turn on syntax highlighting
 syntax on
 
+"For vimwiki.
+set nocompatible
+filetype plugin on
+
 "Turn on line numbers
 set number
 
