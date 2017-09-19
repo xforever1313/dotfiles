@@ -34,4 +34,4 @@ makeSymLink $cwd/.zshrc $HOME/.zshrc
 makeSymLink $cwd/.bashrc $HOME/.bashrc
 makeSymLink $cwd/.vimrc $HOME/.vimrc
 makeSymLink $cwd/.vim $HOME/.vim
-
+makeSymLink $cwd/.omnisharp $HOME/.omnisharp
