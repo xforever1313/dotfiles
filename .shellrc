@@ -14,7 +14,7 @@ alias ls="ls --color=auto"
 #####
 ### Environmental Vars
 #####
-PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin:/usr/lib/emscripten:$HOME/.gem/ruby/2.2/bin
+PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin:/usr/lib/emscripten:$HOME/.gem/ruby/2.2/bin:$HOME/bin:$HOME/.local/bin:
 export EDITOR=vim
 export MONO_LOG_LEVEL=message
 
