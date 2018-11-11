@@ -10,6 +10,7 @@
 #####
 alias cls=clear
 alias ls="ls --color=auto"
+alias ubuntu_version="lsb_release -a"
 
 #####
 ### Environmental Vars
@@ -17,6 +18,7 @@ alias ls="ls --color=auto"
 PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin:/usr/lib/emscripten:$HOME/.gem/ruby/2.2/bin:$HOME/bin:$HOME/.local/bin:
 export EDITOR=vim
 export MONO_LOG_LEVEL=message
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 #####
 ### Other vars
