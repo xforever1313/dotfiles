@@ -10,6 +10,7 @@
 #####
 alias cls=clear
 alias ls="ls --color=auto"
+alias dirspace="du -sh"
 
 #####
 ### Environmental Vars
