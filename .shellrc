@@ -12,11 +12,12 @@ alias cls=clear
 alias ls="ls --color=auto"
 alias dirspace="du -sh"
 alias ubuntu_version="lsb_release -a"
+alias user_help="echo -e 'cls -clear\ndirspace -Check Directory size\nubuntu_version -Get current version of Ubuntu'"
 
 #####
 ### Environmental Vars
 #####
-PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin:/usr/lib/emscripten:$HOME/.gem/ruby/2.2/bin:$HOME/bin:$HOME/.local/bin:
+PATH=$PATH:$HOME/gcc-pi/bin:$HOME/bin:/usr/lib/emscripten:$HOME/.gem/ruby/2.2/bin:$HOME/bin:$HOME/.local/bin:$HOME/.dotnet/tools/:
 export EDITOR=vim
 export MONO_LOG_LEVEL=message
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
